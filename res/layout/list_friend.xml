@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_userhead"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/mini_avatar_shadow"
+        android:focusable="false" />
+    
+    <LinearLayout 
+        android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" >
+    	
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="id" />
+        
+        <TextView
+            android:id="@+id/sign"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="暂无个性签名" />
+
+    </LinearLayout>
+</LinearLayout>

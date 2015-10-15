@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:orientation="horizontal">
+        
+        <Button 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="返回"
+    		android:id="@+id/buttonBack"/>
+        
+        <TextView
+        	android:id="@+id/titleText"
+        	android:layout_width="match_parent"
+        	android:layout_height="30dp"
+        	android:text="title"
+        	android:gravity="center_horizontal|center_vertical" />
+        
+    </LinearLayout> 
+    
+    <Button
+        android:id="@+id/buttonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="群聊" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="添加好友" />
+        
+    </LinearLayout>
+
+    <ListView 
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </ListView>
+</LinearLayout>
