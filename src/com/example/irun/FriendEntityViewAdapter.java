@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+//好友列表的适配器
 public class FriendEntityViewAdapter extends BaseAdapter {
 	
 	private List<FriendEntity> list;//存放所有消息对象

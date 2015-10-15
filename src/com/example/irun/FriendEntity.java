@@ -1,5 +1,6 @@
 package com.example.irun;
 
+//∫√”—
 public class FriendEntity {
 
 	private String id;

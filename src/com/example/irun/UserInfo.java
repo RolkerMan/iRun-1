@@ -1,5 +1,6 @@
 package com.example.irun;
 
+//用户信息
 public class UserInfo {
 	
 	private static String id;

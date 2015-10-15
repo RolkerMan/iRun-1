@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
+//计步器功能的设置界面
 public class StepSettingFragment extends Fragment implements OnClickListener {
 	
 	public static SharedPreferences sharedPreferences;

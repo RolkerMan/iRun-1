@@ -15,6 +15,7 @@ import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
 
+//连接网络的服务
 public class SocketService extends Service {
 	
 	private static Socket socket;

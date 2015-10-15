@@ -1,5 +1,6 @@
 package com.example.irun;
 
+//聊天信息
 public class ChatMsgEntity {
 
 	private String name;//消息来自  

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+//聊天信息列表的适配器
 public class ChatMsgListViewAdapter extends BaseAdapter {
 	
 	private List<ChatMsgEntity> list;//存放所有消息对象

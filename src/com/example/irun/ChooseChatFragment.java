@@ -27,6 +27,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//选择聊天模式的界面，分为群聊和一对一聊天
 public class ChooseChatFragment extends Fragment implements OnClickListener,OnItemClickListener{
 	
 	private TextView textTitle;

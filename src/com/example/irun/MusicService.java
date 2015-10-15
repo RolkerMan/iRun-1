@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.IBinder;
 
+//ÒôÀÖ·şÎñ
 public class MusicService extends Service {
 
 	private MediaPlayer mp;

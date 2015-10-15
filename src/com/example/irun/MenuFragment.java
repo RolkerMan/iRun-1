@@ -19,6 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+//²à»¬²Ëµ¥
 public class MenuFragment extends Fragment implements OnClickListener,OnItemClickListener {
 
     private ListView drawerList;  

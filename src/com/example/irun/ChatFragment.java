@@ -25,19 +25,20 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+//聊天界面
 public class ChatFragment extends Fragment implements OnClickListener {
 
-	private EditText editText;
-	private Button sendButton;
-	private Button backButton;
-	private TextView titleText;
+	private EditText editText;//输入要发送的信息
+	private Button sendButton;//发送按钮
+	private Button backButton;//返回按钮
+	private TextView titleText;//标题
 	
-	private ListView listView;
+	private ListView listView;//聊天信息的滑动列表
 	private ChatMsgListViewAdapter adapter;
 	private List<ChatMsgEntity> list;
 
 	private String toID;//表示跟谁聊天的窗口
-	private MessageReceiver messageReceiver;
+	private MessageReceiver messageReceiver;//接受监听的对象
 	
 	public ChatFragment(String toID)
 	{

@@ -24,6 +24,7 @@ import android.widget.SlidingDrawer.OnDrawerCloseListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//显示模型的界面，同时还有计步器的功能
 public class MainFragment extends Fragment implements OnClickListener {
 
 	private FragmentManager fragmentManager;
@@ -77,12 +78,11 @@ public class MainFragment extends Fragment implements OnClickListener {
 		weight = StepSettingFragment.sharedPreferences.getInt(
 				StepSettingFragment.WEIGHT_VALUE, 50);
 		
-		UnityPlayer unityPlayer = new UnityPlayer(getActivity());
-		View playerView = unityPlayer.getView();
-		LinearLayout ll = (LinearLayout)view.findViewById(R.id.unityViewLyaout);
-		ll.addView(playerView);
-		
-		
+//		UnityPlayer unityPlayer = new UnityPlayer(getActivity());
+//		View playerView = unityPlayer.getView();
+//		LinearLayout ll = (LinearLayout)view.findViewById(R.id.unityViewLyaout);
+//		ll.addView(playerView);
+			
 		Button buttonStart = (Button)view.findViewById(R.id.buttonStart);
 		Button buttonPause = (Button)view.findViewById(R.id.buttonPause);
 		Button buttonClear = (Button)view.findViewById(R.id.buttonClear);
@@ -100,26 +100,26 @@ public class MainFragment extends Fragment implements OnClickListener {
 			
 		handler = new Handler();
 		
-		hide();
-		new Handler().postDelayed(new Runnable() {			
-			@Override
-			public void run() {
-				show();
-				Intent intent = new Intent(getActivity(),MusicService.class);
-		        Bundle bundle = new Bundle();
-		        bundle.putInt("id",R.raw.univ0019);
-		        intent.putExtras(bundle);
-		        getActivity().startService(intent);
-			}
-		}, 5000);
-		
-		new Handler().postDelayed(new Runnable() {			
-			@Override
-			public void run() {
-				random();
-				handler.postDelayed(this,10000);
-			}
-		}, 12000);
+//		hide();
+//		new Handler().postDelayed(new Runnable() {			
+//			@Override
+//			public void run() {
+//				show();
+//				Intent intent = new Intent(getActivity(),MusicService.class);
+//		        Bundle bundle = new Bundle();
+//		        bundle.putInt("id",R.raw.univ0019);
+//		        intent.putExtras(bundle);
+//		        getActivity().startService(intent);
+//			}
+//		}, 5000);
+//		
+//		new Handler().postDelayed(new Runnable() {			
+//			@Override
+//			public void run() {
+//				random();
+//				handler.postDelayed(this,10000);
+//			}
+//		}, 12000);
 			
 		return view;
 	}
@@ -135,8 +135,8 @@ public class MainFragment extends Fragment implements OnClickListener {
 			updateInfo();
 			
 			canRandom = false;
-			UnityPlayer.UnitySendMessage("Main Camera","Move","0.25");
-			UnityPlayer.UnitySendMessage("unitychan","PlayAnim","0_RUN00_F");
+//			UnityPlayer.UnitySendMessage("Main Camera","Move","0.25");
+//			UnityPlayer.UnitySendMessage("unitychan","PlayAnim","0_RUN00_F");
 		}
 		else if(v.getId() == R.id.buttonPause)
 		{
@@ -146,8 +146,8 @@ public class MainFragment extends Fragment implements OnClickListener {
 			handler.removeCallbacks(calculateRunnable);
 			
 			canRandom = true;
-			UnityPlayer.UnitySendMessage("Main Camera","Move","-0.25");
-			UnityPlayer.UnitySendMessage("unitychan","PlayAnim","0_WAIT00");
+//			UnityPlayer.UnitySendMessage("Main Camera","Move","-0.25");
+//			UnityPlayer.UnitySendMessage("unitychan","PlayAnim","0_WAIT00");
 		}
 		else if(v.getId() == R.id.buttonClear)
 		{

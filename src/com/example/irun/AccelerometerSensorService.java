@@ -11,6 +11,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 
+//传感器服务，用来给传感器设置监听
 public class AccelerometerSensorService extends Service {
 
 	public static Boolean FLAG = false;// 服务运行标志

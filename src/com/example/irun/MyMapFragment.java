@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
+//µÿÕºΩÁ√Ê
 public class MyMapFragment extends Fragment implements LocationSource,AMapLocationListener, 
                        OnCheckedChangeListener {
  

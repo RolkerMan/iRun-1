@@ -12,7 +12,8 @@ import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-public class MainActivity extends UnityPlayerActivity {
+//主Activity，管理界面的切换
+public class MainActivity extends Activity {
 
 	private FragmentManager fm;
 	public static View bottomBar;

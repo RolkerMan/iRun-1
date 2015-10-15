@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+//µÇÂ¼½çÃæ
 public class LoginFragment extends Fragment implements OnClickListener {
 
 	private EditText editUser;
